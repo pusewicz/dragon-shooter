@@ -12,8 +12,13 @@ end
 
 desc "Build and publish game"
 task :publish do
+  require_relative "app/constants"
   game_directory = File.dirname(__FILE__)
   dragon_directory = File.dirname(DRAGON_PUBLISH_EXE)
+  metadata_path = File.join(game_directory, 'metadata', 'game_metadata.txt')
+
+  metadata = File.read(metadata_path)
+  File.write(metadata_path, metadata.gsub(/^version=(.*)$/) { |match| "version=#{VERSION}" })
 
   rm_rf File.join(game_directory, "builds")
   rm_rf File.join(dragon_directory, "builds")
