@@ -1,0 +1,3 @@
+VERSION = "0.0.2"
+VERSION_STRING = "Version: #{VERSION}".freeze
+MULTIPLIER = 4

@@ -1,0 +1,6 @@
+devid=com.layer22
+devtitle=layer|twenty|two
+gameid=dragon-shooter
+gametitle=Dragon Shooter
+version=0.0.1
+icon=metadata/icon.png
