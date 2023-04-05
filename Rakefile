@@ -1,5 +1,5 @@
-DRAGON_EXE = "/Users/piotr/Library/Application Support/itch/apps/dragonruby-gtk/dragonruby-macos/dragonruby"
-DRAGON_PUBLISH_EXE = "/Users/piotr/Library/Application Support/itch/apps/dragonruby-gtk/dragonruby-macos/dragonruby-publish"
+DRAGON_EXE = File.join(Dir.home, "Library/Application Support/itch/apps/dragonruby-gtk/dragonruby-macos/dragonruby")
+DRAGON_PUBLISH_EXE = File.join(Dir.home, "Library/Application Support/itch/apps/dragonruby-gtk/dragonruby-macos/dragonruby-publish")
 
 desc "Run the game"
 task :run do
